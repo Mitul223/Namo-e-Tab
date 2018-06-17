@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.namotab">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:label="Namo E-Tab">
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="Registration" />
+        <activity
+            android:name=".faculty_profile"
+            android:label="Faculty Profile" />
+        <activity
+            android:name=".editProfile"
+            android:label="Profile" />
+        <activity
+            android:name=".faculty_material_list"
+            android:label="Registration" />
+        <activity android:name=".upload_material"
+            android:label="Upload Material"/>
+        <activity
+            android:name=".admin_profile_list"
+            android:label="Welcome Admin" />
+        <activity
+            android:name=".Reviwer"
+            android:label="Welcome Reviewer" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".materialViewer"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".CodeTesting"/>
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
