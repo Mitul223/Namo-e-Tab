@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+    <ImageView
+        android:id="@+id/icon"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/avatar"
+        android:layout_width="128px"
+        android:layout_height="128px"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"/>
+    <TextView
+        android:id="@+id/list_item_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:paddingLeft="8dp"
+        android:text="simple1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/allow"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white"
+        android:background="@color/allow"
+        android:text="Allow" />
+
+    <Button
+        android:id="@+id/deny"
+        android:layout_width="60dp"
+
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/allow"
+        android:background="@color/deny"
+        android:textColor="@color/white"
+        android:text="Deny" />
+
+</RelativeLayout>
